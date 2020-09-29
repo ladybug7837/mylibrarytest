@@ -12,7 +12,7 @@
     "build:lib:all": "lerna run build",
     "lerna:version": "lerna version --conventional-commits --conventional-graduate -m \"release(package): publish a new version\" --no-push",
     "lerna:status": "lerna changed --long",
-    "lerna:publish": "lerna publish"
+    "lerna:publish": "lerna publish from-package"
   },
   "dependencies": {
     "core-js": "^3.6.4",
