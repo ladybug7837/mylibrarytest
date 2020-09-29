@@ -56,11 +56,6 @@ const config = {
           'postcss-loader',
           {
             loader: 'sass-loader',
-            options: {
-              data: `
-                @import "@packages/ecw-theme/index.scss";
-              `,
-            },
           },
         ],
       },

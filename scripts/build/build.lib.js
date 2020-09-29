@@ -28,7 +28,7 @@ const buildPath = `packages/${component}`;
 const buildOutput = `${buildPath}/build/`;
 
 const getBuildTypes = () => {
-  let buildTypes = ['ssr'];
+  let buildTypes = ['client', 'ssr'];
   if (process.argv.includes('--add-umd')) {
     buildTypes.push('umd');
   }

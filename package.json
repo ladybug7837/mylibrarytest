@@ -2,6 +2,10 @@
   "name": "mylibrarytest",
   "version": "0.1.0",
   "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "clean": "rm -rf node_modules && yarn install",
     "build:lib": "node ./scripts/build/build.lib.js",
