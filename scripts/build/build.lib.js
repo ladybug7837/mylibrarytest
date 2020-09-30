@@ -94,8 +94,8 @@ const taskCopying = async () => {
     filesToCopy.map(f => {
       if (f === 'package.json') {
         const data = JSON.parse(fs.readFileSync(`${buildPath}/${f}`));
-        data.main = `dist/${componentName}.ssr.common.js`;
-        data.browser = `dist/${componentName}.client.common.js`;
+        data.browser = `dist/${componentName}.ssr.common.js`;
+        data.main = `dist/${componentName}.client.common.js`;
         if (getBuildTypes().includes('umd')) {
           data.umd = `dist/${componentName}.umd.common.js`;
         }

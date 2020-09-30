@@ -9,7 +9,7 @@ export default Vue.extend({
   props: {
     message: {
       type: String,
-      default: 'Hello world!',
+      default: 'Hello world 2!',
     },
   },
 });
